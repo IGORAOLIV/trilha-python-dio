@@ -1,3 +1,5 @@
+# fatiamento de tuplas segue a mesma lógica de fatiamento de listas, ou seja, tupla[inicio:fim:passo]
+
 tupla = ("p", "y", "t", "h", "o", "n",)
 
 print(tupla[2:])  # ("t", "h", "o", "n")
