@@ -1,11 +1,14 @@
-def exibir_poema(data_extenso, *args, **kwargs):
-    texto = "\n".join(args)
-    meta_dados = "\n".join([f"{chave.title()}: {valor}" for chave, valor in kwargs.items()])
+# *args e **kwargs são formas de passar um número variável de argumentos para uma função. *args é usado para passar uma lista de argumentosem forma de tupla, enquanto **kwargs é usado para passar um dicionário de argumentos nomeados. Eles são úteis quando você não sabe quantos argumentos serão passados para a função ou quando deseja criar funções flexíveis que podem aceitar diferentes tipos de argumentos.
+
+def exibir_poema(data_extenso, *lista, **dicionario): # *args é usado para passar uma lista de argumentos em forma de tupla, enquanto **kwargs é usado para passar um dicionário de argumentos nomeados.
+    texto = "\n".join(lista)
+    meta_dados = "\n".join([f"{chave.title()}: {valor}" for chave, valor in dicionario.items()])
     mensagem = f"{data_extenso}\n\n{texto}\n\n{meta_dados}"
     print(mensagem)
 
 
 exibir_poema(
+    "Sexta-feira, 03 de Abril de 2026",
     "Zen of Python",
     "Beautiful is better than ugly.",
     "Explicit is better than implicit.",
