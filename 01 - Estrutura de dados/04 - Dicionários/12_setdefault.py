@@ -1,3 +1,5 @@
+# metodo setdefault() - retorna o valor da chave especificada, ou insere a chave com um valor padrão caso a chave não exista no dicionário
+
 contato = {"nome": "Guilherme", "telefone": "3333-2221"}
 
 contato.setdefault("nome", "Giovanna")  # "Guilherme"

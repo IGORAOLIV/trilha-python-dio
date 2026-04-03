@@ -1,3 +1,5 @@
+# metodo update() - atualiza o dicionário com os pares chave-valor de outro dicionário, sobrescrevendo as chaves existentes e adicionando as chaves novas
+
 contatos = {"guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"}}
 
 contatos.update({"guilherme@gmail.com": {"nome": "Gui"}})

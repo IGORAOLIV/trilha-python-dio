@@ -1,3 +1,5 @@
+# metodo del - remove um item do dicionário, a diferença para o método pop() é que o del não retorna o valor do item removido, ele apenas remove o item do dicionário
+
 contatos = {
     "guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},
     "giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},

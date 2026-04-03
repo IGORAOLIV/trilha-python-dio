@@ -1,3 +1,5 @@
+# metodo copy() - retorna uma cópia do dicionário, ou seja, um novo dicionário com os mesmos itens do dicionário original
+
 contatos = {"guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"}}
 
 copia = contatos.copy()
