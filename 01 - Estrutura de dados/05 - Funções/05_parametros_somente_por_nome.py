@@ -1,3 +1,5 @@
+# Parâmetros somente por nome são aqueles que obrigam o usuário a passar os argumentos usando palavras-chave para identificá-los, independentemente da ordem em que são definidos na função.
+
 def criar_carro(modelo, ano, placa, /, *, marca, motor, combustivel):
     print(modelo, ano, placa, marca, motor, combustivel)
 
