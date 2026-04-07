@@ -1,3 +1,5 @@
+# Construtores e destrutores são métodos especiais em Python que são chamados automaticamente quando um objeto é criado ou destruído, respectivamente. O construtor é definido usando o método __init__, enquanto o destruidor é definido usando o método __del__. O construtor é usado para inicializar os atributos do objeto, enquanto o destruidor é usado para liberar recursos ou realizar ações de limpeza quando o objeto é destruído.
+
 class Cachorro:
     def __init__(self, nome, cor, acordado=True):
         print("Inicializando a classe...")
