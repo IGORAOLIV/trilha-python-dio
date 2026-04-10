@@ -1,3 +1,5 @@
+# Herança Simples - é quando uma classe herda de apenas uma classe pai. A classe filha pode acessar os atributos e métodos da classe pai, além de poder adicionar seus próprios atributos e métodos.
+
 class Veiculo:
     def __init__(self, cor, placa, numero_rodas):
         self.cor = cor
@@ -20,8 +22,8 @@ class Carro(Veiculo):
 
 
 class Caminhao(Veiculo):
-    def __init__(self, cor, placa, numero_rodas, carregado):
-        super().__init__(cor, placa, numero_rodas)
+    def __init__(self, cor, placa, numero_rodas, carregado): # O construtor da classe Caminhao é definido para receber um parâmetro adicional chamado carregado, que indica se o caminhão está carregado ou não.
+        super().__init__(cor, placa, numero_rodas) # O super() é usado para chamar o construtor da classe pai (Veiculo) e inicializar os atributos herdados. Depois disso, podemos adicionar o atributo específico da classe Caminhao, que é carregado.
         self.carregado = carregado
 
     def esta_carregado(self):

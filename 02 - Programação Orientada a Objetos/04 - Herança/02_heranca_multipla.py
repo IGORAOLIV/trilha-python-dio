@@ -1,3 +1,5 @@
+# Herança Múltipla - é quando uma classe herda de mais de uma classe pai. A classe filha pode acessar os atributos e métodos de todas as classes pai, além de poder adicionar seus próprios atributos e métodos. No exemplo abaixo, a classe Ornitorrinco herda tanto da classe Mamifero quanto da classe Ave, o que permite que ela tenha características de ambos os tipos de animais.
+
 class Animal:
     def __init__(self, nro_patas):
         self.nro_patas = nro_patas
@@ -7,7 +9,7 @@ class Animal:
 
 
 class Mamifero(Animal):
-    def __init__(self, cor_pelo, **kw):
+    def __init__(self, cor_pelo, **kw): # O construtor da classe Mamifero é definido para receber um parâmetro adicional chamado cor_pelo, que indica a cor do pelo do mamífero. O **kw é usado para aceitar quaisquer outros argumentos adicionais que possam ser passados para o construtor, permitindo que ele seja flexível e possa ser usado em classes filhas que herdam de Mamifero.
         self.cor_pelo = cor_pelo
         super().__init__(**kw)
 
